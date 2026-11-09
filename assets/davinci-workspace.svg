@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="uiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12141a"/>
+      <stop offset="100%" stop-color="#0a0b0e"/>
+    </linearGradient>
+    <radialGradient id="wheelGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a3040"/>
+      <stop offset="100%" stop-color="#101217"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Workspace Container Background -->
+  <rect width="700" height="480" rx="12" fill="url(#uiBg)" stroke="#272a38" stroke-width="2"/>
+
+  <!-- Top DaVinci Menu Bar -->
+  <rect x="0" y="0" width="700" height="34" rx="12 12 0 0" fill="#181b24"/>
+  <circle cx="20" cy="17" r="5" fill="#ef4444"/>
+  <circle cx="36" cy="17" r="5" fill="#f59e0b"/>
+  <circle cx="52" cy="17" r="5" fill="#10b981"/>
+  <text x="76" y="22" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">DaVinci Resolve Studio — Color Page (Project: Band_Promo_Master)</text>
+  <rect x="580" y="7" width="104" height="20" rx="4" fill="#252a39"/>
+  <text x="590" y="21" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">ACEScc / 24fps</text>
+
+  <!-- Main Viewer Panel (Left Top) -->
+  <rect x="16" y="46" width="410" height="230" rx="8" fill="#06070a" stroke="#252936" stroke-width="1.5"/>
+  <!-- Simulated Footage in viewer -->
+  <rect x="22" y="52" width="398" height="218" rx="6" fill="#0d1424"/>
+  <circle cx="220" cy="150" r="46" fill="#f59e0b" fill-opacity="0.25"/>
+  <path d="M180 200 C180 200 170 240 170 270 L270 270 C270 240 260 200 260 200 Z" fill="#070b14"/>
+  <circle cx="220" cy="140" r="22" fill="#070b14"/>
+  <text x="32" y="76" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10b981">● 01:00:14:08</text>
+  <text x="350" y="76" font-family="'JetBrains Mono', monospace" font-size="11" fill="#a1a1aa">SRC</text>
+
+  <!-- Node Graph Panel (Right Top) -->
+  <rect x="438" y="46" width="246" height="230" rx="8" fill="#141720" stroke="#252936" stroke-width="1.5"/>
+  <text x="452" y="68" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8" font-weight="600">NODE TREE (SERIAL)</text>
+
+  <!-- Node 01: Balance & Exposure -->
+  <rect x="454" y="90" width="86" height="48" rx="6" fill="#1b202d" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="462" y="108" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8" font-weight="600">01: EXPOSURE</text>
+  <text x="462" y="124" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">Offset +0.2</text>
+  <circle cx="540" cy="114" r="3" fill="#10b981"/>
+
+  <!-- Node Connection Line 1->2 -->
+  <path d="M543 114 L580 114 L580 170 L590 170" stroke="#10b981" stroke-width="2" fill="none"/>
+
+  <!-- Node 02: Look & Teal/Orange Curve -->
+  <rect x="584" y="150" width="86" height="48" rx="6" fill="#1b202d" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="592" y="168" font-family="'JetBrains Mono', monospace" font-size="10" fill="#f59e0b" font-weight="600">02: LOOK CST</text>
+  <text x="592" y="184" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">Film Contrast</text>
+
+  <!-- Output Node -->
+  <circle cx="650" cy="240" r="8" fill="#10b981"/>
+  <text x="590" y="244" font-family="'JetBrains Mono', monospace" font-size="9" fill="#a1a1aa">OUT MASTER</text>
+
+  <!-- Bottom Panel: 3 Color Wheels (Lift, Gamma, Gain) + Scopes -->
+  <rect x="16" y="288" width="668" height="176" rx="8" fill="#12151e" stroke="#252936" stroke-width="1.5"/>
+
+  <!-- Wheel 1: LIFT (Shadows / Cyan tint) -->
+  <g transform="translate(40, 305)">
+    <text x="40" y="14" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8" text-anchor="middle">LIFT</text>
+    <circle cx="40" cy="65" r="42" fill="url(#wheelGlow)" stroke="#333a4d" stroke-width="2"/>
+    <circle cx="40" cy="65" r="36" fill="none" stroke="#222735" stroke-width="1"/>
+    <!-- Wheel crosshair -->
+    <line x1="40" y1="28" x2="40" y2="102" stroke="#252a39" stroke-width="1"/>
+    <line x1="3" y1="65" x2="77" y2="65" stroke="#252a39" stroke-width="1"/>
+    <!-- Position dot biased toward teal -->
+    <circle cx="34" cy="70" r="4" fill="#06b6d4"/>
+    <text x="40" y="126" font-family="'JetBrains Mono', monospace" font-size="9" fill="#06b6d4" text-anchor="middle">-0.04</text>
+  </g>
+
+  <!-- Wheel 2: GAMMA (Midtones) -->
+  <g transform="translate(150, 305)">
+    <text x="40" y="14" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8" text-anchor="middle">GAMMA</text>
+    <circle cx="40" cy="65" r="42" fill="url(#wheelGlow)" stroke="#333a4d" stroke-width="2"/>
+    <line x1="40" y1="28" x2="40" y2="102" stroke="#252a39" stroke-width="1"/>
+    <line x1="3" y1="65" x2="77" y2="65" stroke="#252a39" stroke-width="1"/>
+    <!-- Position dot -->
+    <circle cx="42" cy="63" r="4" fill="#cbd5e1"/>
+    <text x="40" y="126" font-family="'JetBrains Mono', monospace" font-size="9" fill="#cbd5e1" text-anchor="middle">+0.01</text>
+  </g>
+
+  <!-- Wheel 3: GAIN (Highlights / Warm Amber) -->
+  <g transform="translate(260, 305)">
+    <text x="40" y="14" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8" text-anchor="middle">GAIN</text>
+    <circle cx="40" cy="65" r="42" fill="url(#wheelGlow)" stroke="#333a4d" stroke-width="2"/>
+    <line x1="40" y1="28" x2="40" y2="102" stroke="#252a39" stroke-width="1"/>
+    <line x1="3" y1="65" x2="77" y2="65" stroke="#252a39" stroke-width="1"/>
+    <!-- Position dot biased toward warm amber -->
+    <circle cx="47" cy="58" r="4" fill="#f59e0b"/>
+    <text x="40" y="126" font-family="'JetBrains Mono', monospace" font-size="9" fill="#f59e0b" text-anchor="middle">+0.08</text>
+  </g>
+
+  <!-- RGB Parade / Scopes Monitor (Right side of bottom panel) -->
+  <g transform="translate(390, 302)">
+    <rect x="0" y="0" width="278" height="146" rx="6" fill="#090b10" stroke="#232736" stroke-width="1"/>
+    <text x="12" y="18" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">PARADE (R G B) SCOPES</text>
+
+    <!-- 100% / 0% IRE guide lines -->
+    <line x1="10" y1="34" x2="268" y2="34" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <line x1="10" y1="78" x2="268" y2="78" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <line x1="10" y1="126" x2="268" y2="126" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+    <!-- Red Channel Trace -->
+    <path d="M20 120 Q35 70 50 85 T80 50 T95 110" stroke="#ef4444" stroke-width="2" fill="none" opacity="0.85"/>
+    <text x="50" y="140" font-family="'JetBrains Mono', monospace" font-size="9" fill="#ef4444" text-anchor="middle">R</text>
+
+    <!-- Green Channel Trace -->
+    <path d="M105 122 Q120 75 135 90 T165 58 T180 114" stroke="#10b981" stroke-width="2" fill="none" opacity="0.85"/>
+    <text x="140" y="140" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10b981" text-anchor="middle">G</text>
+
+    <!-- Blue Channel Trace -->
+    <path d="M190 125 Q205 85 220 95 T250 65 T265 118" stroke="#06b6d4" stroke-width="2" fill="none" opacity="0.85"/>
+    <text x="230" y="140" font-family="'JetBrains Mono', monospace" font-size="9" fill="#06b6d4" text-anchor="middle">B</text>
+  </g>
+</svg>
+

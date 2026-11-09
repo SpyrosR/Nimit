@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bandBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0e14"/>
+      <stop offset="50%" stop-color="#141a29"/>
+      <stop offset="100%" stop-color="#08090d"/>
+    </linearGradient>
+
+    <radialGradient id="bandAmber" cx="70%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#b45309" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="bandCyan" cx="25%" cy="60%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#0891b2" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bandBg)"/>
+  <rect width="800" height="450" fill="url(#bandAmber)"/>
+  <rect width="800" height="450" fill="url(#bandCyan)"/>
+
+  <!-- Stage Light Flares -->
+  <polygon points="560,0 640,0 750,450 480,450" fill="#f59e0b" opacity="0.15"/>
+  <polygon points="180,0 240,0 360,450 80,450" fill="#06b6d4" opacity="0.12"/>
+
+  <!-- Guitarist Silhouette on stage -->
+  <circle cx="530" cy="180" r="34" fill="#06080c"/>
+  <path d="M495 215 C495 215 480 290 490 450 L590 450 C600 290 580 215 580 215 Z" fill="#06080c"/>
+  <!-- Guitar Neck & Body -->
+  <path d="M470 340 L620 220" stroke="#f59e0b" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="490" cy="330" rx="36" ry="24" transform="rotate(-30 490 330)" fill="#78350f" stroke="#f59e0b" stroke-width="2"/>
+
+  <!-- Drummer silhouette in background -->
+  <circle cx="280" cy="220" r="26" fill="#080b12"/>
+  <rect x="264" y="246" width="32" height="60" rx="8" fill="#080b12"/>
+  <ellipse cx="230" cy="280" rx="35" ry="9" fill="#06b6d4" fill-opacity="0.3" stroke="#06b6d4" stroke-width="2"/>
+  <ellipse cx="330" cy="275" rx="38" ry="9" fill="#06b6d4" fill-opacity="0.3" stroke="#06b6d4" stroke-width="2"/>
+
+  <!-- Lower Third Overlay / DaVinci Resolve Badge -->
+  <rect x="24" y="24" width="130" height="28" rx="6" fill="rgba(10,12,18,0.85)" stroke="#38bdf8" stroke-width="1"/>
+  <text x="36" y="42" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8" font-weight="600">BAND PROMO</text>
+
+  <rect x="630" y="24" width="146" height="28" rx="6" fill="rgba(10,12,18,0.85)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="642" y="42" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f59e0b" font-weight="600">DAVINCI RESOLVE</text>
+
+  <!-- Big Title Stamp -->
+  <rect x="24" y="374" width="380" height="52" rx="8" fill="rgba(8,10,15,0.85)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="40" y="398" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" fill="#f1f5f9" font-weight="700">Indie Band Portfolio Showcase</text>
+  <text x="40" y="416" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94a3b8">CUT &amp; COLOR GRADE • 82 SECONDS</text>
+</svg>
+
